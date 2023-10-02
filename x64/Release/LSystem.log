@@ -1,0 +1,5 @@
+﻿  LSystem.cpp
+C:\Users\DELL\Desktop\HW3_basecode_VS2019\LSystem.cpp(52,9): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+     Creating library C:\Users\DELL\Desktop\HW3_basecode_VS2019\bin\_LSystem.lib and object C:\Users\DELL\Desktop\HW3_basecode_VS2019\bin\_LSystem.exp
+  LSystem.vcxproj -> C:\Users\DELL\Desktop\HW3_basecode_VS2019\bin\_LSystem.pyd

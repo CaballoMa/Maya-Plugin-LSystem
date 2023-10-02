@@ -1,0 +1,49 @@
+﻿  Performing Custom Build Tools
+LSystem.h(62): warning 362: operator= ignored
+LSystem.h(73): warning 325: Nested class not currently supported (Turtle ignored)
+vec.h(89): warning 362: operator= ignored
+vec.h(94): warning 389: operator[] ignored (consider using %extend)
+vec.h(95): warning 389: operator[] ignored (consider using %extend)
+vec.h(137): warning 362: operator= ignored
+vec.h(142): warning 389: operator[] ignored (consider using %extend)
+vec.h(143): warning 389: operator[] ignored (consider using %extend)
+vec.h(193): warning 362: operator= ignored
+vec.h(194): warning 389: operator[] ignored (consider using %extend)
+vec.h(195): warning 389: operator[] ignored (consider using %extend)
+matrix.h(229): warning 362: operator= ignored
+matrix.h(310): warning 325: Nested struct not currently supported (base_mat ignored)
+matrix.h(708): warning 361: operator! ignored
+LSystem.i(14): warning 453: Can't apply (std::vector< std::vector< float > > &INOUT). No typemaps are defined.
+vec.h(103): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(104): warning 503: Can't wrap 'operator +' unless renamed to a valid identifier.
+vec.h(105): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(106): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(107): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(108): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(109): warning 503: Can't wrap 'operator /' unless renamed to a valid identifier.
+vec.h(110): warning 503: Can't wrap 'operator ^' unless renamed to a valid identifier.
+vec.h(111): warning 503: Can't wrap 'operator ==' unless renamed to a valid identifier.
+vec.h(112): warning 503: Can't wrap 'operator !=' unless renamed to a valid identifier.
+vec.h(153): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(154): warning 503: Can't wrap 'operator +' unless renamed to a valid identifier.
+vec.h(155): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(156): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(157): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(158): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(159): warning 503: Can't wrap 'operator /' unless renamed to a valid identifier.
+vec.h(160): warning 503: Can't wrap 'operator ^' unless renamed to a valid identifier.
+vec.h(161): warning 503: Can't wrap 'operator ==' unless renamed to a valid identifier.
+vec.h(162): warning 503: Can't wrap 'operator !=' unless renamed to a valid identifier.
+vec.h(179): warning 503: Can't wrap 'operator <<' unless renamed to a valid identifier.
+vec.h(199): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(200): warning 503: Can't wrap 'operator +' unless renamed to a valid identifier.
+vec.h(201): warning 503: Can't wrap 'operator -' unless renamed to a valid identifier.
+vec.h(202): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(203): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+vec.h(204): warning 503: Can't wrap 'operator *' unless renamed to a valid identifier.
+  LSystem.cpp
+C:\Users\DELL\Desktop\HW3_basecode_VS2019\LSystem.cpp(52,9): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  LSystem_wrap.cpp
+C:\Users\DELL\Desktop\HW3_basecode_VS2019\LSystem_wrap.cpp(178,11): fatal error C1083: Cannot open include file: 'Python.h': No such file or directory
+  vec.cpp
+  Generating Code...

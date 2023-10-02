@@ -1,0 +1,2 @@
+^C:\USERS\DELL\DESKTOP\HW3_BASECODE_VS2019\LSYSTEM.I
+swigwin-4.0.1\swig.exe -c++ -python -outdir C:\Users\DELL\Desktop\HW3_basecode_VS2019\x64\Debug\ LSystem.i

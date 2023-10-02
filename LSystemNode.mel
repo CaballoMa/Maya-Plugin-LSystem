@@ -1,0 +1,64 @@
+
+global proc randomNetworkUI()
+{
+	polyCube;
+    instancer;
+    createNode randomNode;
+    connectAttr pCube1.matrix instancer1.inputHierarchy[0]; 
+    connectAttr randomNode1.outPoints instancer1.inputPoints; 
+}
+
+global proc randomNetworkSelectedUI()
+{
+	string $obj[] = `ls -sl`;
+	if (size($obj) == 1) {
+		$item = $obj[0];
+		instancer;
+		createNode randomNode;
+		connectAttr ($item+".matrix") instancer1.inputHierarchy[0]; 
+		connectAttr randomNode1.outPoints instancer1.inputPoints; 
+	} else {
+	    error ("Select Only One Object !");
+	}
+}
+
+
+global proc lSystemNetworkUI() {
+	polyCube;
+	instancer;
+	createNode LSystemInstanceNode;
+	connectAttr pCube1.matrix instancer1.inputHierarchy[0];
+	connectAttr LSystemInstanceNode1.outBranches instancer1.inputPoints;
+
+	polySphere;
+	instancer;
+	connectAttr pSphere1.matrix instancer2.inputHierarchy[0];
+	connectAttr LSystemInstanceNode1.outFlowers instancer2.inputPoints;
+}
+
+global proc lSystemNetworkSelectedUI()
+{
+
+	string $obj[] = `ls -sl`;
+	if (size($obj) == 2) {
+		$branch = $obj[0];
+		$flower = $obj[1];
+	
+		instancer;
+		createNode LSystemInstanceNode;
+		connectAttr ($branch+".matrix") instancer1.inputHierarchy[0];
+		connectAttr LSystemInstanceNode1.outBranches instancer1.inputPoints;
+
+		instancer;
+		connectAttr ($flower+".matrix") instancer2.inputHierarchy[0];
+		connectAttr LSystemInstanceNode1.outFlowers instancer2.inputPoints;
+	} else {
+	    error ("Select Only Two Objects !");
+	}
+}
+
+menu -parent MayaWindow -label "LSystem" -tearOff true LSystemMenu;
+		menuItem -label "Create RandomNode Network" -command "randomNetworkUI();"; 
+		menuItem -label "Create RandomNode Network from Selected" -command "randomNetworkSelectedUI();"; 
+		menuItem -label "Create LSystemInstanceNode Network" -command "lSystemNetworkUI();"; 
+		menuItem -label "Create LSystemInstanceNode Network from Selected" -command "lSystemNetworkSelectedUI();"; 
